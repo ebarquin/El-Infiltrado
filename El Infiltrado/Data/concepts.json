@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "text": "Playa",
+    "category": "lugar",
+    "language": "es"
+  },
+  {
+    "id": 2,
+    "text": "Biblioteca",
+    "category": "lugar",
+    "language": "es"
+  },
+  {
+    "id": 3,
+    "text": "Cena de empresa",
+    "category": "evento",
+    "language": "es"
+  }
+]
