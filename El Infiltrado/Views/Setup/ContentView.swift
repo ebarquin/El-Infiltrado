@@ -50,11 +50,12 @@ struct ContentView: View {
                 Spacer()
             }
             .padding()
-            .sheet(isPresented: $showGame, onDismiss: { selectedConcept = nil }) {
-                if let concept = selectedConcept {
-                    // TODO: Implement GameView(numPlayers: numPlayers, concept: concept)
-                    // GameView(numPlayers: numPlayers, concept: concept)
-                }
+            .sheet(isPresented: $showGame, onDismiss: {
+                selectedConcept = nil
+            }) {
+                GameView(numPlayers: numPlayers, onRestart: {
+                    showGame = false
+                })
             }
         }
         .onAppear {
