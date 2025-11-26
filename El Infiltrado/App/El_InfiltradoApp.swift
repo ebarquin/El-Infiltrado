@@ -14,4 +14,13 @@ struct El_InfiltradoApp: App {
             ContentView()
         }
     }
+    
+    init() {
+        let concepts = ConceptRepository.loadAllConcepts()
+        print("Loaded concepts: \(concepts.count)")
+        // Si quieres ver uno:
+        if let random = concepts.randomElement() {
+            print("Random concept example: \(random)")
+        }
+    }
 }
