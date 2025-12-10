@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		25F9E3002EE9EABE007C1DF4 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 25F9E2FF2EE9EABE007C1DF4 /* Localizable.xcstrings */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		25CC796E2ED6527100E73EC2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,24 +31,12 @@
 		25CC79602ED6527000E73EC2 /* El Infiltrado.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "El Infiltrado.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25CC796D2ED6527100E73EC2 /* El InfiltradoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "El InfiltradoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25CC79772ED6527100E73EC2 /* El InfiltradoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "El InfiltradoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25F9E2FF2EE9EABE007C1DF4 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		25F9E2FE2EE9E124007C1DF4 /* Exceptions for "El Infiltrado" folder in "El Infiltrado" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				"El-Infiltrado-Info.plist",
-			);
-			target = 25CC795F2ED6527000E73EC2 /* El Infiltrado */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		25CC79622ED6527000E73EC2 /* El Infiltrado */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				25F9E2FE2EE9E124007C1DF4 /* Exceptions for "El Infiltrado" folder in "El Infiltrado" target */,
-			);
 			path = "El Infiltrado";
 			sourceTree = "<group>";
 		};
@@ -88,6 +80,7 @@
 		25CC79572ED6527000E73EC2 = {
 			isa = PBXGroup;
 			children = (
+				25F9E2FF2EE9EABE007C1DF4 /* Localizable.xcstrings */,
 				25CC79622ED6527000E73EC2 /* El Infiltrado */,
 				25CC79702ED6527100E73EC2 /* El InfiltradoTests */,
 				25CC797A2ED6527100E73EC2 /* El InfiltradoUITests */,
@@ -205,6 +198,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 25CC79572ED6527000E73EC2;
 			minimizedProjectReferenceProxies = 1;
@@ -225,6 +219,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25F9E3002EE9EABE007C1DF4 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +336,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -397,6 +393,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

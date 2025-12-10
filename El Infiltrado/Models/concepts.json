@@ -1,0 +1,802 @@
+[
+  {
+    "id": 51,
+    "text": "playa",
+    "text_es": "playa",
+    "text_en": "beach",
+    "category": "lugar",
+    "language": "es"
+  },
+  {
+    "id": 52,
+    "text": "bosque",
+    "text_es": "bosque",
+    "text_en": "forest",
+    "category": "lugar",
+    "language": "es"
+  },
+  {
+    "id": 53,
+    "text": "montaña",
+    "text_es": "montaña",
+    "text_en": "mountain",
+    "category": "lugar",
+    "language": "es"
+  },
+  {
+    "id": 54,
+    "text": "ciudad antigua",
+    "text_es": "ciudad antigua",
+    "text_en": "old town",
+    "category": "lugar",
+    "language": "es"
+  },
+  {
+    "id": 55,
+    "text": "estación de tren",
+    "text_es": "estación de tren",
+    "text_en": "train station",
+    "category": "lugar",
+    "language": "es"
+  },
+  {
+    "id": 56,
+    "text": "puerto marítimo",
+    "text_es": "puerto marítimo",
+    "text_en": "seaport",
+    "category": "lugar",
+    "language": "es"
+  },
+  {
+    "id": 57,
+    "text": "mercado central",
+    "text_es": "mercado central",
+    "text_en": "central market",
+    "category": "lugar",
+    "language": "es"
+  },
+  {
+    "id": 58,
+    "text": "aeropuerto",
+    "text_es": "aeropuerto",
+    "text_en": "airport",
+    "category": "lugar",
+    "language": "es"
+  },
+  {
+    "id": 59,
+    "text": "cueva",
+    "text_es": "cueva",
+    "text_en": "cave",
+    "category": "lugar",
+    "language": "es"
+  },
+  {
+    "id": 60,
+    "text": "isla desierta",
+    "text_es": "isla desierta",
+    "text_en": "desert island",
+    "category": "lugar",
+    "language": "es"
+  },
+  {
+    "id": 61,
+    "text": "boda",
+    "text_es": "boda",
+    "text_en": "wedding",
+    "category": "evento",
+    "language": "es"
+  },
+  {
+    "id": 62,
+    "text": "concierto",
+    "text_es": "concierto",
+    "text_en": "concert",
+    "category": "evento",
+    "language": "es"
+  },
+  {
+    "id": 63,
+    "text": "festival gastronómico",
+    "text_es": "festival gastronómico",
+    "text_en": "food festival",
+    "category": "evento",
+    "language": "es"
+  },
+  {
+    "id": 64,
+    "text": "debate político",
+    "text_es": "debate político",
+    "text_en": "political debate",
+    "category": "evento",
+    "language": "es"
+  },
+  {
+    "id": 65,
+    "text": "manifestación",
+    "text_es": "manifestación",
+    "text_en": "protest",
+    "category": "evento",
+    "language": "es"
+  },
+  {
+    "id": 66,
+    "text": "partido de fútbol",
+    "text_es": "partido de fútbol",
+    "text_en": "football match",
+    "category": "evento",
+    "language": "es"
+  },
+  {
+    "id": 67,
+    "text": "estreno de cine",
+    "text_es": "estreno de cine",
+    "text_en": "movie premiere",
+    "category": "evento",
+    "language": "es"
+  },
+  {
+    "id": 68,
+    "text": "graduación",
+    "text_es": "graduación",
+    "text_en": "graduation",
+    "category": "evento",
+    "language": "es"
+  },
+  {
+    "id": 69,
+    "text": "feria medieval",
+    "text_es": "feria medieval",
+    "text_en": "medieval fair",
+    "category": "evento",
+    "language": "es"
+  },
+  {
+    "id": 70,
+    "text": "competición de baile",
+    "text_es": "competición de baile",
+    "text_en": "dance competition",
+    "category": "evento",
+    "language": "es"
+  },
+  {
+    "id": 71,
+    "text": "correr",
+    "text_es": "correr",
+    "text_en": "running",
+    "category": "actividad",
+    "language": "es"
+  },
+  {
+    "id": 72,
+    "text": "pintar",
+    "text_es": "pintar",
+    "text_en": "painting",
+    "category": "actividad",
+    "language": "es"
+  },
+  {
+    "id": 73,
+    "text": "cocinar",
+    "text_es": "cocinar",
+    "text_en": "cooking",
+    "category": "actividad",
+    "language": "es"
+  },
+  {
+    "id": 74,
+    "text": "leer",
+    "text_es": "leer",
+    "text_en": "reading",
+    "category": "actividad",
+    "language": "es"
+  },
+  {
+    "id": 75,
+    "text": "excursionismo",
+    "text_es": "excursionismo",
+    "text_en": "hiking",
+    "category": "actividad",
+    "language": "es"
+  },
+  {
+    "id": 76,
+    "text": "buceo",
+    "text_es": "buceo",
+    "text_en": "diving",
+    "category": "actividad",
+    "language": "es"
+  },
+  {
+    "id": 77,
+    "text": "escuchar música",
+    "text_es": "escuchar música",
+    "text_en": "listening to music",
+    "category": "actividad",
+    "language": "es"
+  },
+  {
+    "id": 78,
+    "text": "tejer",
+    "text_es": "tejer",
+    "text_en": "knitting",
+    "category": "actividad",
+    "language": "es"
+  },
+  {
+    "id": 79,
+    "text": "jugar videojuegos",
+    "text_es": "jugar videojuegos",
+    "text_en": "gaming",
+    "category": "actividad",
+    "language": "es"
+  },
+  {
+    "id": 80,
+    "text": "acampar",
+    "text_es": "acampar",
+    "text_en": "camping",
+    "category": "actividad",
+    "language": "es"
+  },
+  {
+    "id": 81,
+    "text": "bombero",
+    "text_es": "bombero",
+    "text_en": "firefighter",
+    "category": "persona",
+    "language": "es"
+  },
+  {
+    "id": 82,
+    "text": "astronauta",
+    "text_es": "astronauta",
+    "text_en": "astronaut",
+    "category": "persona",
+    "language": "es"
+  },
+  {
+    "id": 83,
+    "text": "científico",
+    "text_es": "científico",
+    "text_en": "scientist",
+    "category": "persona",
+    "language": "es"
+  },
+  {
+    "id": 84,
+    "text": "profesor",
+    "text_es": "profesor",
+    "text_en": "teacher",
+    "category": "persona",
+    "language": "es"
+  },
+  {
+    "id": 85,
+    "text": "ladrón",
+    "text_es": "ladrón",
+    "text_en": "thief",
+    "category": "persona",
+    "language": "es"
+  },
+  {
+    "id": 86,
+    "text": "chef",
+    "text_es": "chef",
+    "text_en": "chef",
+    "category": "persona",
+    "language": "es"
+  },
+  {
+    "id": 87,
+    "text": "músico",
+    "text_es": "músico",
+    "text_en": "musician",
+    "category": "persona",
+    "language": "es"
+  },
+  {
+    "id": 88,
+    "text": "cartero",
+    "text_es": "cartero",
+    "text_en": "mail carrier",
+    "category": "persona",
+    "language": "es"
+  },
+  {
+    "id": 89,
+    "text": "guarda forestal",
+    "text_es": "guarda forestal",
+    "text_en": "park ranger",
+    "category": "persona",
+    "language": "es"
+  },
+  {
+    "id": 90,
+    "text": "bibliotecario",
+    "text_es": "bibliotecario",
+    "text_en": "librarian",
+    "category": "persona",
+    "language": "es"
+  },
+  {
+    "id": 91,
+    "text": "martillo",
+    "text_es": "martillo",
+    "text_en": "hammer",
+    "category": "objeto",
+    "language": "es"
+  },
+  {
+    "id": 92,
+    "text": "telescopio",
+    "text_es": "telescopio",
+    "text_en": "telescope",
+    "category": "objeto",
+    "language": "es"
+  },
+  {
+    "id": 93,
+    "text": "maleta",
+    "text_es": "maleta",
+    "text_en": "suitcase",
+    "category": "objeto",
+    "language": "es"
+  },
+  {
+    "id": 94,
+    "text": "linterna",
+    "text_es": "linterna",
+    "text_en": "flashlight",
+    "category": "objeto",
+    "language": "es"
+  },
+  {
+    "id": 95,
+    "text": "paraguas",
+    "text_es": "paraguas",
+    "text_en": "umbrella",
+    "category": "objeto",
+    "language": "es"
+  },
+  {
+    "id": 96,
+    "text": "bicicleta",
+    "text_es": "bicicleta",
+    "text_en": "bicycle",
+    "category": "objeto",
+    "language": "es"
+  },
+  {
+    "id": 97,
+    "text": "ordenador portátil",
+    "text_es": "ordenador portátil",
+    "text_en": "laptop",
+    "category": "objeto",
+    "language": "es"
+  },
+  {
+    "id": 98,
+    "text": "botella",
+    "text_es": "botella",
+    "text_en": "bottle",
+    "category": "objeto",
+    "language": "es"
+  },
+  {
+    "id": 99,
+    "text": "mapa",
+    "text_es": "mapa",
+    "text_en": "map",
+    "category": "objeto",
+    "language": "es"
+  },
+  {
+    "id": 100,
+    "text": "llave antigua",
+    "text_es": "llave antigua",
+    "text_en": "ancient key",
+    "category": "objeto",
+    "language": "es"
+  },
+  {
+    "id": 101,
+    "text": "paella",
+    "text_es": "paella",
+    "text_en": "paella",
+    "category": "alimento",
+    "language": "es"
+  },
+  {
+    "id": 102,
+    "text": "hamburguesa",
+    "text_es": "hamburguesa",
+    "text_en": "burger",
+    "category": "alimento",
+    "language": "es"
+  },
+  {
+    "id": 103,
+    "text": "ensalada griega",
+    "text_es": "ensalada griega",
+    "text_en": "greek salad",
+    "category": "alimento",
+    "language": "es"
+  },
+  {
+    "id": 104,
+    "text": "pizza margarita",
+    "text_es": "pizza margarita",
+    "text_en": "margherita pizza",
+    "category": "alimento",
+    "language": "es"
+  },
+  {
+    "id": 105,
+    "text": "tortilla de patatas",
+    "text_es": "tortilla de patatas",
+    "text_en": "spanish omelette",
+    "category": "alimento",
+    "language": "es"
+  },
+  {
+    "id": 106,
+    "text": "ramen",
+    "text_es": "ramen",
+    "text_en": "ramen",
+    "category": "alimento",
+    "language": "es"
+  },
+  {
+    "id": 107,
+    "text": "curry",
+    "text_es": "curry",
+    "text_en": "curry",
+    "category": "alimento",
+    "language": "es"
+  },
+  {
+    "id": 108,
+    "text": "helado de vainilla",
+    "text_es": "helado de vainilla",
+    "text_en": "vanilla ice cream",
+    "category": "alimento",
+    "language": "es"
+  },
+  {
+    "id": 109,
+    "text": "sopa de tomate",
+    "text_es": "sopa de tomate",
+    "text_en": "tomato soup",
+    "category": "alimento",
+    "language": "es"
+  },
+  {
+    "id": 110,
+    "text": "chocolate negro",
+    "text_es": "chocolate negro",
+    "text_en": "dark chocolate",
+    "category": "alimento",
+    "language": "es"
+  },
+  {
+    "id": 111,
+    "text": "coche eléctrico",
+    "text_es": "coche eléctrico",
+    "text_en": "electric car",
+    "category": "transporte",
+    "language": "es"
+  },
+  {
+    "id": 112,
+    "text": "tren de alta velocidad",
+    "text_es": "tren de alta velocidad",
+    "text_en": "high-speed train",
+    "category": "transporte",
+    "language": "es"
+  },
+  {
+    "id": 113,
+    "text": "barco pesquero",
+    "text_es": "barco pesquero",
+    "text_en": "fishing boat",
+    "category": "transporte",
+    "language": "es"
+  },
+  {
+    "id": 114,
+    "text": "helicóptero",
+    "text_es": "helicóptero",
+    "text_en": "helicopter",
+    "category": "transporte",
+    "language": "es"
+  },
+  {
+    "id": 115,
+    "text": "globo aerostático",
+    "text_es": "globo aerostático",
+    "text_en": "hot air balloon",
+    "category": "transporte",
+    "language": "es"
+  },
+  {
+    "id": 116,
+    "text": "metro",
+    "text_es": "metro",
+    "text_en": "subway",
+    "category": "transporte",
+    "language": "es"
+  },
+  {
+    "id": 117,
+    "text": "patinete eléctrico",
+    "text_es": "patinete eléctrico",
+    "text_en": "electric scooter",
+    "category": "transporte",
+    "language": "es"
+  },
+  {
+    "id": 118,
+    "text": "avión comercial",
+    "text_es": "avión comercial",
+    "text_en": "airplane",
+    "category": "transporte",
+    "language": "es"
+  },
+  {
+    "id": 119,
+    "text": "camión",
+    "text_es": "camión",
+    "text_en": "truck",
+    "category": "transporte",
+    "language": "es"
+  },
+  {
+    "id": 120,
+    "text": "bicicleta de montaña",
+    "text_es": "bicicleta de montaña",
+    "text_en": "mountain bike",
+    "category": "transporte",
+    "language": "es"
+  },
+  {
+    "id": 121,
+    "text": "baloncesto",
+    "text_es": "baloncesto",
+    "text_en": "basketball",
+    "category": "deporte",
+    "language": "es"
+  },
+  {
+    "id": 122,
+    "text": "tenis",
+    "text_es": "tenis",
+    "text_en": "tennis",
+    "category": "deporte",
+    "language": "es"
+  },
+  {
+    "id": 123,
+    "text": "natación",
+    "text_es": "natación",
+    "text_en": "swimming",
+    "category": "deporte",
+    "language": "es"
+  },
+  {
+    "id": 124,
+    "text": "ciclismo",
+    "text_es": "ciclismo",
+    "text_en": "cycling",
+    "category": "deporte",
+    "language": "es"
+  },
+  {
+    "id": 125,
+    "text": "boxeo",
+    "text_es": "boxeo",
+    "text_en": "boxing",
+    "category": "deporte",
+    "language": "es"
+  },
+  {
+    "id": 126,
+    "text": "halterofilia",
+    "text_es": "halterofilia",
+    "text_en": "weightlifting",
+    "category": "deporte",
+    "language": "es"
+  },
+  {
+    "id": 127,
+    "text": "escalada",
+    "text_es": "escalada",
+    "text_en": "climbing",
+    "category": "deporte",
+    "language": "es"
+  },
+  {
+    "id": 128,
+    "text": "golf",
+    "text_es": "golf",
+    "text_en": "golf",
+    "category": "deporte",
+    "language": "es"
+  },
+  {
+    "id": 129,
+    "text": "surf",
+    "text_es": "surf",
+    "text_en": "surfing",
+    "category": "deporte",
+    "language": "es"
+  },
+  {
+    "id": 130,
+    "text": "atletismo",
+    "text_es": "atletismo",
+    "text_en": "athletics",
+    "category": "deporte",
+    "language": "es"
+  },
+  {
+    "id": 131,
+    "text": "médico",
+    "text_es": "médico",
+    "text_en": "doctor",
+    "category": "profesión",
+    "language": "es"
+  },
+  {
+    "id": 132,
+    "text": "abogado",
+    "text_es": "abogado",
+    "text_en": "lawyer",
+    "category": "profesión",
+    "language": "es"
+  },
+  {
+    "id": 133,
+    "text": "ingeniero",
+    "text_es": "ingeniero",
+    "text_en": "engineer",
+    "category": "profesión",
+    "language": "es"
+  },
+  {
+    "id": 134,
+    "text": "diseñador gráfico",
+    "text_es": "diseñador gráfico",
+    "text_en": "graphic designer",
+    "category": "profesión",
+    "language": "es"
+  },
+  {
+    "id": 135,
+    "text": "arquitecto",
+    "text_es": "arquitecto",
+    "text_en": "architect",
+    "category": "profesión",
+    "language": "es"
+  },
+  {
+    "id": 136,
+    "text": "psicólogo",
+    "text_es": "psicólogo",
+    "text_en": "psychologist",
+    "category": "profesión",
+    "language": "es"
+  },
+  {
+    "id": 137,
+    "text": "panadero",
+    "text_es": "panadero",
+    "text_en": "baker",
+    "category": "profesión",
+    "language": "es"
+  },
+  {
+    "id": 138,
+    "text": "periodista",
+    "text_es": "periodista",
+    "text_en": "journalist",
+    "category": "profesión",
+    "language": "es"
+  },
+  {
+    "id": 139,
+    "text": "electricista",
+    "text_es": "electricista",
+    "text_en": "electrician",
+    "category": "profesión",
+    "language": "es"
+  },
+  {
+    "id": 140,
+    "text": "fotógrafo",
+    "text_es": "fotógrafo",
+    "text_en": "photographer",
+    "category": "profesión",
+    "language": "es"
+  },
+  {
+    "id": 141,
+    "text": "tigre",
+    "text_es": "tigre",
+    "text_en": "tiger",
+    "category": "animal",
+    "language": "es"
+  },
+  {
+    "id": 142,
+    "text": "elefante",
+    "text_es": "elefante",
+    "text_en": "elephant",
+    "category": "animal",
+    "language": "es"
+  },
+  {
+    "id": 143,
+    "text": "águila",
+    "text_es": "águila",
+    "text_en": "eagle",
+    "category": "animal",
+    "language": "es"
+  },
+  {
+    "id": 144,
+    "text": "delfín",
+    "text_es": "delfín",
+    "text_en": "dolphin",
+    "category": "animal",
+    "language": "es"
+  },
+  {
+    "id": 145,
+    "text": "koala",
+    "text_es": "koala",
+    "text_en": "koala",
+    "category": "animal",
+    "language": "es"
+  },
+  {
+    "id": 146,
+    "text": "pingüino",
+    "text_es": "pingüino",
+    "text_en": "penguin",
+    "category": "animal",
+    "language": "es"
+  },
+  {
+    "id": 147,
+    "text": "jirafa",
+    "text_es": "jirafa",
+    "text_en": "giraffe",
+    "category": "animal",
+    "language": "es"
+  },
+  {
+    "id": 148,
+    "text": "tortuga",
+    "text_es": "tortuga",
+    "text_en": "turtle",
+    "category": "animal",
+    "language": "es"
+  },
+  {
+    "id": 149,
+    "text": "oso polar",
+    "text_es": "oso polar",
+    "text_en": "polar bear",
+    "category": "animal",
+    "language": "es"
+  },
+  {
+    "id": 150,
+    "text": "lobo",
+    "text_es": "lobo",
+    "text_en": "wolf",
+    "category": "animal",
+    "language": "es"
+  }
+]

@@ -96,7 +96,7 @@ struct PlayerCardView: View {
                         .shadow(color: .black.opacity(0.2), radius: 8, x: 4, y: 4)
                         .frame(width: 160, height: 160)
 
-                    Text("Tap to reveal your role")
+                    Text(NSLocalizedString("tap_reveal_role", comment: ""))
                         .font(.system(size: 22, weight: .semibold, design: .rounded))
                         .foregroundColor(.white)
                         .shadow(color: .black.opacity(0.25), radius: 4, x: 2, y: 2)
@@ -124,7 +124,7 @@ struct PlayerCardView: View {
 
                     Group {
                         if isImpostor {
-                            Text("You are the impostor")
+                            Text(NSLocalizedString("role_impostor", comment: ""))
                                 .font(.system(size: 34, weight: .bold, design: .rounded))
                                 .foregroundColor(.white)
                                 .multilineTextAlignment(.center)
@@ -138,7 +138,7 @@ struct PlayerCardView: View {
                                 .shadow(color: .white.opacity(0.25), radius: 5, x: 0, y: 0)
                                 .padding(.top, -4)
                         } else {
-                            Text("The secret word is")
+                            Text(NSLocalizedString("secret_word_is", comment: ""))
                                 .font(.system(size: 20, weight: .semibold, design: .rounded))
                                 .foregroundColor(.white.opacity(0.9))
                                 .shadow(color: .black.opacity(0.25), radius: 3, x: 2, y: 2)
@@ -153,7 +153,7 @@ struct PlayerCardView: View {
                         }
                     }
 
-                    Text("Tap to hide and pass the phone")
+                    Text(NSLocalizedString("tap_hide_pass_phone", comment: ""))
                         .font(.system(size: 20, weight: .semibold, design: .rounded))
                         .foregroundColor(.white.opacity(0.9))
                         .multilineTextAlignment(.center)
@@ -267,7 +267,7 @@ struct GameView: View {
                                 PlayerCardView(
                                     avatar: playerAvatars[safe: index] ?? animalAvatars.first!,
                                     isImpostor: index == impostorIndex,
-                                    conceptText: concept.text,
+                                    conceptText: concept.localizedText,
                                     backgroundColors: cardBackgrounds[safe: index] ?? [.yellow, .orange],
                                     angle: $cardAngles[index],
                                     onFlipCompleted: { advanceToNextPlayer(from: index) }
@@ -282,7 +282,7 @@ struct GameView: View {
                     }
                     .tabViewStyle(.page(indexDisplayMode: .always))
                 } else {
-                    ProgressView("Loading…")
+                    ProgressView(NSLocalizedString("loading", comment: ""))
                         .onAppear {
                             let loaded: [Concept] = ConceptRepository.loadAllConcepts()
                             concepts = loaded
@@ -308,7 +308,7 @@ struct GameView: View {
                         playerAvatars = Array(animalAvatars.shuffled().prefix(numPlayers))
 
                     }) {
-                        Label("Play Again", systemImage: "repeat")
+                        Label(NSLocalizedString("button_play_again", comment: ""), systemImage: "repeat")
                     }
                     .buttonStyle(CartoonButtonStyle())
                     .font(.headline)
@@ -318,7 +318,7 @@ struct GameView: View {
                     Button(action: {
                         onRestart()
                     }) {
-                        Label("Back to Setup", systemImage: "arrowshape.turn.up.backward.fill")
+                        Label(NSLocalizedString("button_back_setup", comment: ""), systemImage: "arrowshape.turn.up.backward.fill")
                     }
                     .buttonStyle(CartoonButtonStyle())
                     .font(.headline)

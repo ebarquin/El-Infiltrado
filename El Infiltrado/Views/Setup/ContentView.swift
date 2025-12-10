@@ -17,14 +17,14 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             VStack(spacing: 24) {
-                Text("El Infiltrado")
+                Text(NSLocalizedString("title_main", comment: ""))
                     .font(.system(size: 40, weight: .bold, design: .rounded))
                     .foregroundColor(.black)
                     .shadow(color: .black.opacity(0.15), radius: 4, x: 0, y: 2)
                     .padding(.top, 8)
                 
                 HStack(spacing: 16) {
-                    Text("Players:")
+                    Text(NSLocalizedString("label_players", comment: ""))
                         .font(.system(size: 22, weight: .semibold, design: .rounded))
 
                     Button(action: { if numPlayers > 3 { numPlayers -= 1 } }) {
@@ -72,7 +72,7 @@ struct ContentView: View {
                         showGame = true
                     }
                 } label: {
-                    Text("Start Game")
+                    Text(NSLocalizedString("button_start_game", comment: ""))
                         .font(.system(.headline, design: .rounded).bold())
                         .frame(maxWidth: .infinity)
                 }
