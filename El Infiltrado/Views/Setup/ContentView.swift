@@ -16,12 +16,18 @@ struct ContentView: View {
     
     var body: some View {
         NavigationStack {
-            VStack(spacing: 24) {
+            VStack(spacing: 32) {
                 Text(NSLocalizedString("title_main", comment: ""))
-                    .font(.system(size: 40, weight: .bold, design: .rounded))
+                    .font(.system(size: 44, weight: .heavy, design: .rounded))
                     .foregroundColor(.black)
-                    .shadow(color: .black.opacity(0.15), radius: 4, x: 0, y: 2)
-                    .padding(.top, 8)
+                    .shadow(color: .orange.opacity(0.35), radius: 4, x: 0, y: 3)
+                    .padding(.top, 4)
+                
+                Text(NSLocalizedString("subtitle_select_players", comment: ""))
+                    .font(.system(size: 18, weight: .medium, design: .rounded))
+                    .foregroundColor(Color.orange.opacity(0.8))
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal)
                 
                 HStack(spacing: 16) {
                     Text(NSLocalizedString("label_players", comment: ""))

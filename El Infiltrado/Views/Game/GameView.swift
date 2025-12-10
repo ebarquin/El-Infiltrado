@@ -260,24 +260,30 @@ struct GameView: View {
             VStack(spacing: 16) {
                 if let concept = concept, let impostorIndex = impostorIndex {
                     TabView(selection: $currentPage) {
-                        ForEach(Array(0..<numPlayers), id: \.self) { index in
-                            VStack {
-                                Spacer()
-                                
-                                PlayerCardView(
-                                    avatar: playerAvatars[safe: index] ?? animalAvatars.first!,
-                                    isImpostor: index == impostorIndex,
-                                    conceptText: concept.localizedText,
-                                    backgroundColors: cardBackgrounds[safe: index] ?? [.yellow, .orange],
-                                    angle: $cardAngles[index],
-                                    onFlipCompleted: { advanceToNextPlayer(from: index) }
-                                )
-                                .padding(.bottom, 16)
-                                
-                                Spacer()
+                        ForEach(0..<(numPlayers + 1), id: \.self) { index in
+                            if index < numPlayers {
+                                VStack {
+                                    Spacer()
+                                    
+                                    PlayerCardView(
+                                        avatar: playerAvatars[safe: index] ?? animalAvatars.first!,
+                                        isImpostor: index == impostorIndex,
+                                        conceptText: concept.localizedText,
+                                        backgroundColors: cardBackgrounds[safe: index] ?? [.yellow, .orange],
+                                        angle: $cardAngles[index],
+                                        onFlipCompleted: { advanceToNextPlayer(from: index) }
+                                    )
+                                    .padding(.bottom, 16)
+                                    
+                                    Spacer()
+                                }
+                                .padding()
+                                .tag(index)
+                            } else {
+                                StartGameFinalCard()
+                                    .padding()
+                                    .tag(index)
                             }
-                            .padding()
-                            .tag(index)
                         }
                     }
                     .tabViewStyle(.page(indexDisplayMode: .always))
@@ -336,9 +342,41 @@ struct GameView: View {
         
         withAnimation(.easeInOut) {
             if index < numPlayers - 1 {
+                // Avanza al siguiente jugador
                 currentPage = index + 1
+            } else if index == numPlayers - 1 {
+                // Último jugador: avanza a la carta final "A jugar"
+                currentPage = numPlayers
             }
         }
+    }
+}
+
+struct StartGameFinalCard: View {
+    var body: some View {
+        ZStack {
+            RoundedRectangle(cornerRadius: 40, style: .continuous)
+                .fill(
+                    LinearGradient(
+                        colors: [.purple.opacity(0.9), .blue.opacity(0.85)],
+                        startPoint: .top,
+                        endPoint: .bottom
+                    )
+                )
+                .overlay(
+                    RoundedRectangle(cornerRadius: 40, style: .continuous)
+                        .stroke(Color.white.opacity(0.9), lineWidth: 4)
+                )
+                .shadow(color: .black.opacity(0.20), radius: 10, x: 6, y: 6)
+
+            Text(NSLocalizedString("carousel_start_game", comment: ""))
+                .font(.system(size: 44, weight: .bold, design: .rounded))
+                .foregroundColor(.white)
+                .multilineTextAlignment(.center)
+                .shadow(color: .black.opacity(0.3), radius: 5, x: 2, y: 3)
+                .padding()
+        }
+        .frame(maxWidth: 350, minHeight: 320)
     }
 }
 
