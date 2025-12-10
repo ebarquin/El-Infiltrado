@@ -18,21 +18,54 @@ struct ContentView: View {
         NavigationStack {
             VStack(spacing: 24) {
                 Text("El Infiltrado")
-                    .font(.largeTitle.bold())
-                    .padding(.top)
+                    .font(.system(size: 40, weight: .bold, design: .rounded))
+                    .foregroundColor(.black)
+                    .shadow(color: .black.opacity(0.15), radius: 4, x: 0, y: 2)
+                    .padding(.top, 8)
                 
-                // Selector de número de jugadores
-                HStack {
+                HStack(spacing: 16) {
                     Text("Players:")
-                    Stepper(value: $numPlayers, in: 3...8) {
-                        Text("\(numPlayers)")
-                            .font(.title3)
-                            .bold()
+                        .font(.system(size: 22, weight: .semibold, design: .rounded))
+
+                    Button(action: { if numPlayers > 3 { numPlayers -= 1 } }) {
+                        Image(systemName: "minus")
+                            .font(.system(size: 20, weight: .bold))
+                            .foregroundColor(.white)
+                            .frame(width: 44, height: 44)
+                            .background(
+                                Circle()
+                                    .fill(
+                                        LinearGradient(colors: [.orange, .yellow], startPoint: .top, endPoint: .bottom)
+                                    )
+                            )
+                            .overlay(
+                                Circle().stroke(Color.white, lineWidth: 3)
+                            )
+                            .shadow(color: .black.opacity(0.2), radius: 4, x: 2, y: 3)
                     }
-                    .frame(width: 180)
+
+                    Text("\(numPlayers)")
+                        .font(.system(size: 28, weight: .bold, design: .rounded))
+                        .frame(width: 40)
+
+                    Button(action: { if numPlayers < 8 { numPlayers += 1 } }) {
+                        Image(systemName: "plus")
+                            .font(.system(size: 20, weight: .bold))
+                            .foregroundColor(.white)
+                            .frame(width: 44, height: 44)
+                            .background(
+                                Circle()
+                                    .fill(
+                                        LinearGradient(colors: [.orange, .yellow], startPoint: .top, endPoint: .bottom)
+                                    )
+                            )
+                            .overlay(
+                                Circle().stroke(Color.white, lineWidth: 3)
+                            )
+                            .shadow(color: .black.opacity(0.2), radius: 4, x: 2, y: 3)
+                    }
                 }
                 
-                // Botón para empezar la partida (de momento solo print)
                 Button {
                     if let concept = concepts.randomElement() {
                         selectedConcept = concept
@@ -40,10 +73,10 @@ struct ContentView: View {
                     }
                 } label: {
                     Text("Start Game")
-                        .font(.headline)
+                        .font(.system(.headline, design: .rounded).bold())
                         .frame(maxWidth: .infinity)
                 }
-                .buttonStyle(.borderedProminent)
+                .buttonStyle(CartoonButtonStyle())
                 .padding(.horizontal)
                 .disabled(concepts.isEmpty || numPlayers < 3)
                 
